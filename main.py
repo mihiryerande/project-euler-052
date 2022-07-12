@@ -7,7 +7,7 @@
 #
 #     Find the smallest positive integer, x, such that 2x, 3x, 4x, 5x, and 6x, contain the same digits.
 
-def is_permutation(x, y):
+def is_permutation(x: int, y: int) -> bool:
     """
     Return True iff `y` is a permutation of the digits of `x`
 
@@ -24,7 +24,7 @@ def is_permutation(x, y):
     return ''.join(sorted(list(str(x)))) == ''.join(sorted(list(str(y))))
 
 
-def main():
+def main() -> int:
     """
     Returns the smallest positive integer `x` such that
       the digits of each of the multiples x, 2x, 3x, 4x, 5x, and 6x
